@@ -21,7 +21,7 @@ public static void main(String[] args) {
 	Arrays.sort(num);
 	//Equal length of arrays-middle element
 	int len=num.length/2;
-	float middle=(num[len]+num[len-1])/2f;
+	float middle=(num[len]+num[len-1]);
 	System.out.println(middle);
 }
 	

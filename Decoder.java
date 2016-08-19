@@ -16,7 +16,7 @@ public static void main(String[] args) {
 		num=Integer.parseInt(a.substring(indexOfx-1,indexOfx));
 		System.out.println(num);
 		code=a.charAt((indexOfx)+1);
-	}
+	
 	String decode="";
 	String mid="";
 	for(int i=0;i<num;i++){
@@ -26,6 +26,9 @@ public static void main(String[] args) {
 	String end=a.substring(indexOfx+2);
 	decode=front+mid+end;
 	System.out.println(decode);
-	
+	}
+	else{
+		System.out.println(a);
+	}
 }
 }

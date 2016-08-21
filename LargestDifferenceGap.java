@@ -32,7 +32,7 @@ public class LargestDifferenceGap {
 				g=gap[i];
 				diff=num[i];
 			}
-			else if(a==gap[i]){
+			else if(g==gap[i]){
 				if(diff<num[i]){
 					g=gap[i];
 					diff=num[i];

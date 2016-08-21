@@ -25,12 +25,18 @@ public class LargestDifferenceGap {
 		for(int i=0;i<size-1;i++){
 			gap[i]=num[i]-num[i+1];
 		}
-		int g=0;
-		int diff=0;
+		int g=gap[0];
+		int diff=num[0];
 		for(int i=0;i<size-1;i++){
 			if(g<gap[i]){
 				g=gap[i];
 				diff=num[i];
+			}
+			else if(a==gap[i]){
+				if(diff<num[i]){
+					g=gap[i];
+					diff=num[i];
+				}
 			}
 		}
 		

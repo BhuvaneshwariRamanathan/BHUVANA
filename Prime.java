@@ -21,7 +21,7 @@ public class Prime {
 				count++;
 
 		}
-		if (count >= 1)
+		if (count ==0 && number!=2)
 			System.out.println(number+" ");
 		else
 	     continue;

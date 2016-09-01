@@ -26,10 +26,9 @@ public class Snippet {
 		for (int j = i - 1; j >= 0; j--) {
 			sum[j] = temp + remainder[j];
 			temp = sum[j];
+			sum1=sum1+sum[j];
 		}
-		for (int j = i - 1; j >= 0; j--) {
-			sum1 = sum1 + sum[j];
-		}
+	
 		output1 = sum1;
 	}
 }
